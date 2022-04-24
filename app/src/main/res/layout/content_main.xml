@@ -20,9 +20,32 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="24sp"
+        android:text="Bienvenue sur notre projet Android !"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text=" Cette application a vu le jour lors de la réalisation d'une application permettant d'approfondir les thématiques abordées en cours, ainsi que découvrir des éléments non exploités en classe. \n Les différentes fonctionnalités mises en oeuvre sont d'abord un Paint, reprenant le principe du dessin sur un tableau blanc avec plusieurs couleurs. Puis il y a une Calculatrice, permettant de réaliser les calculs des opérations de bases. Et enfin, il y a un Calendrier affichant un calendrier classique, avec les jours de la semaine, mois et années. \n \n Il ne vous reste plus qu'à vous souhaiter une bonne découverte !"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="207dp"
+        android:layout_height="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
