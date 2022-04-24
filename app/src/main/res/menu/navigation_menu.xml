@@ -2,7 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Home" />
-    <item android:title="Calculatrice" />
-    <item android:title="Calendrier" />
-    <item android:title="Paint" />
+    <item
+        android:id="@+id/calculatrice"
+        android:title="Calculatrice" />
+    <item android:id="@+id/calendrier"
+        android:title="Calendrier" />
+    <item
+        android:id="@+id/paint"
+        android:title="Paint" />
 </menu>
