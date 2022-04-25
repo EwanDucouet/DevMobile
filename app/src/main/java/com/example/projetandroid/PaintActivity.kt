@@ -26,6 +26,7 @@ class PaintActivity : AppCompatActivity() {
         val redBtn = findViewById<ImageButton>(R.id.redColor)
         val blueBtn = findViewById<ImageButton>(R.id.blueColor)
         val blackBtn = findViewById<ImageButton>(R.id.blackColor)
+        val greenBtn = findViewById<ImageButton>(R.id.greenColor)
         val eraser = findViewById<ImageButton>(R.id.whiteColor)
 
         redBtn.setOnClickListener {
@@ -43,6 +44,12 @@ class PaintActivity : AppCompatActivity() {
         blackBtn.setOnClickListener {
             Toast.makeText(this,"NOIR",Toast.LENGTH_SHORT).show()
             paintBrush.color = Color.BLACK
+            currentColor(paintBrush.color)
+        }
+
+        greenBtn.setOnClickListener {
+            Toast.makeText(this,"VERT",Toast.LENGTH_SHORT).show()
+            paintBrush.color = Color.GREEN
             currentColor(paintBrush.color)
         }
 
